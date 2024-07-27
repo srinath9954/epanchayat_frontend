@@ -29,7 +29,7 @@ const Municipal = () => {
         });
 
         try {
-            const response = await axios.post('http://localhost:5000/api/municipal', data, {
+            const response = await axios.post('https://epanchayat-backend.onrender.com/api/municipal', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
