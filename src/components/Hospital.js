@@ -19,7 +19,7 @@ const Hospital = () => {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/hospital', newQuery);
+      const response = await axios.post('https://epanchayat-backend.onrender.com/api/hospital', newQuery);
       if (response.status === 200) {
         setQueries([...queries, newQuery]);
         setName('');
