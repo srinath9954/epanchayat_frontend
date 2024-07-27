@@ -29,7 +29,7 @@ const Police = () => {
         });
 
         try {
-            const response = await axios.post('http://localhost:5000/api/police', data, {
+            const response = await axios.post('https://epanchayat-backend.onrender.com/api/police', data, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
